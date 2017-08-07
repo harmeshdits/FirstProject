@@ -1,0 +1,4 @@
+D:\SaddamHusaain\GIT\FirstProject\CaseManagement\DITS.Case.Management\CaseManagement.Common\bin\Debug\CaseManagement.Common.dll
+D:\SaddamHusaain\GIT\FirstProject\CaseManagement\DITS.Case.Management\CaseManagement.Common\bin\Debug\CaseManagement.Common.pdb
+D:\SaddamHusaain\GIT\FirstProject\CaseManagement\DITS.Case.Management\CaseManagement.Common\obj\Debug\CaseManagement.Common.dll
+D:\SaddamHusaain\GIT\FirstProject\CaseManagement\DITS.Case.Management\CaseManagement.Common\obj\Debug\CaseManagement.Common.pdb

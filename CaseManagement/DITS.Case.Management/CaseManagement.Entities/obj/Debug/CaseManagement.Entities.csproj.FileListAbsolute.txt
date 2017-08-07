@@ -1,0 +1,7 @@
+D:\SaddamHusaain\GIT\FirstProject\CaseManagement\DITS.Case.Management\CaseManagement.Entities\bin\Debug\CaseManagement.Entities.dll
+D:\SaddamHusaain\GIT\FirstProject\CaseManagement\DITS.Case.Management\CaseManagement.Entities\bin\Debug\CaseManagement.Entities.pdb
+D:\SaddamHusaain\GIT\FirstProject\CaseManagement\DITS.Case.Management\CaseManagement.Entities\bin\Debug\CaseManagement.Common.dll
+D:\SaddamHusaain\GIT\FirstProject\CaseManagement\DITS.Case.Management\CaseManagement.Entities\bin\Debug\CaseManagement.Common.pdb
+D:\SaddamHusaain\GIT\FirstProject\CaseManagement\DITS.Case.Management\CaseManagement.Entities\obj\Debug\CaseManagement.Entities.csprojResolveAssemblyReference.cache
+D:\SaddamHusaain\GIT\FirstProject\CaseManagement\DITS.Case.Management\CaseManagement.Entities\obj\Debug\CaseManagement.Entities.dll
+D:\SaddamHusaain\GIT\FirstProject\CaseManagement\DITS.Case.Management\CaseManagement.Entities\obj\Debug\CaseManagement.Entities.pdb

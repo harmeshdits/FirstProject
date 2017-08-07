@@ -1,0 +1,9 @@
+D:\SaddamHusaain\GIT\FirstProject\CaseManagement\DITS.Case.Management\CaseMangement.Repository\bin\Debug\CaseMangement.Repository.dll
+D:\SaddamHusaain\GIT\FirstProject\CaseManagement\DITS.Case.Management\CaseMangement.Repository\bin\Debug\CaseMangement.Repository.pdb
+D:\SaddamHusaain\GIT\FirstProject\CaseManagement\DITS.Case.Management\CaseMangement.Repository\bin\Debug\CaseManagement.Common.dll
+D:\SaddamHusaain\GIT\FirstProject\CaseManagement\DITS.Case.Management\CaseMangement.Repository\bin\Debug\CaseManagement.Entities.dll
+D:\SaddamHusaain\GIT\FirstProject\CaseManagement\DITS.Case.Management\CaseMangement.Repository\bin\Debug\CaseManagement.Common.pdb
+D:\SaddamHusaain\GIT\FirstProject\CaseManagement\DITS.Case.Management\CaseMangement.Repository\bin\Debug\CaseManagement.Entities.pdb
+D:\SaddamHusaain\GIT\FirstProject\CaseManagement\DITS.Case.Management\CaseMangement.Repository\obj\Debug\CaseMangement.Repository.csprojResolveAssemblyReference.cache
+D:\SaddamHusaain\GIT\FirstProject\CaseManagement\DITS.Case.Management\CaseMangement.Repository\obj\Debug\CaseMangement.Repository.dll
+D:\SaddamHusaain\GIT\FirstProject\CaseManagement\DITS.Case.Management\CaseMangement.Repository\obj\Debug\CaseMangement.Repository.pdb
