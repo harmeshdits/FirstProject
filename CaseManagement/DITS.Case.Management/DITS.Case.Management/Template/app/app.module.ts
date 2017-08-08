@@ -13,9 +13,12 @@ import { NavbarModule} from './shared/navbar/navbar.module';
 
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
+import { HomeService } from './dashboard/home/home.service';
+
 @NgModule({
     imports:      [
         BrowserModule,
+        HttpModule,
         DashboardModule,
         SidebarModule,
         NavbarModule,
@@ -23,7 +26,7 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
         RouterModule.forRoot([])
     ],
     declarations: [ AppComponent, DashboardComponent ],
-    providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
+    providers: [HomeService, {provide: LocationStrategy, useClass: HashLocationStrategy}],
     bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
