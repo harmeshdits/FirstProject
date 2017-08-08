@@ -1,9 +1,11 @@
-﻿using CaseManagement.Service.IService;
+﻿using CaseManagement.Entities.Response;
+using CaseManagement.Service.IService;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
+using System.Threading.Tasks;
 using System.Web.Http;
 
 namespace CaseManagement.API.Controllers
@@ -28,9 +30,15 @@ namespace CaseManagement.API.Controllers
 
         #region public
         [HttpGet]
-        public string test()
+        public async Task<IHttpActionResult> GetTaskCompletedListInMonthsOneYear()
         {
-            return _IDashBoardService.test();
+            var taskCompletedListInMonthsOneYearDetail = await _IDashBoardService.GetTaskCompletedListInMonthsOneYear();
+
+            if (taskCompletedListInMonthsOneYearDetail.Success)
+            {
+                return Ok(taskCompletedListInMonthsOneYearDetail);
+            }
+            return BadRequest(taskCompletedListInMonthsOneYearDetail.Errors.FirstOrDefault());
         }
 
         #endregion

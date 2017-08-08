@@ -1,4 +1,5 @@
-﻿using CaseManagement.Service.IService;
+﻿using CaseManagement.Entities.Response;
+using CaseManagement.Service.IService;
 using CaseMangement.Repository.IRepository;
 using System;
 using System.Collections.Generic;
@@ -26,9 +27,9 @@ namespace CaseManagement.Service.Service
         #endregion
 
         #region public
-        public string test()
-        {
-           return _IDashBoardRepository.test();
+        public async Task<TaskCompletedResponse> GetTaskCompletedListInMonthsOneYear()
+        {   
+            return await _IDashBoardRepository.GetTaskCompletedListInMonthsOneYear();
         }
 
         #endregion

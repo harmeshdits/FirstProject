@@ -30,7 +30,16 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
@@ -42,6 +51,888 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Context\AccountingPeriod.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\Announcement.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\ASPStateTempApplication.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\ASPStateTempSession.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\Audit_AccountingPeriods.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\Audit_ClientCallCodes.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\Audit_ClientContactNotes.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\Audit_ClientEducation.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\Audit_ClientFederalIncidentReports.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\Audit_ClientIncidentReports.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\Audit_ClientPositiveIncidents.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\Audit_ClientProgramConfinements.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\Audit_ClientProgramEnrollments.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\Audit_ClientProgramFinancials.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\Audit_ClientProgramPhases.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\Audit_ClientProgramPlacements.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\Audit_ClientProgramStatus.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\Audit_ClientRooms.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\Audit_Clients.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\Audit_ClientSecurityFlags.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\Audit_ClientSecurityProcedures.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\Audit_ClientSessionNotes.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\Audit_ClientStatus.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\Audit_ClientTreatmentPlanActions.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\Audit_ClientTreatmentPlanGoals.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\Audit_ClientTreatmentPlans.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\Audit_ClientVehicles.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\Audit_Tasks.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\CallCode.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\CallCodeSchedule.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\CaseManagementDB.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CaseManagementDB.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\CaseManagementDB.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\CaseManagementDB.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CaseManagementDB.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Context\CheckRegister.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\Client.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\ClientAddress.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\ClientAlert.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\ClientAlternateName.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\ClientArrestInfo.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\ClientAssessment.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\ClientAssessmentFile.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\ClientBike.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\ClientBondInfo.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\ClientCallCode.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\ClientCaseFile.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\ClientCommunityFinancial.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\ClientCommunityFinancialDetail.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\ClientCommunityFinancialsQuickPay.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\ClientCommunityFinancialToDo.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\ClientConflict.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\ClientContactNote.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\ClientDiagnos.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\ClientDocket.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\ClientDrugsOfChoice.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\ClientDrugTreatment.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\ClientDrugUseHistory.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\ClientEducation.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\ClientEmergencyContact.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\ClientEmployment.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\ClientEmploymentSkill.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\ClientFederalIncidentReport.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\ClientGroupRegistration.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\ClientIdentifier.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\ClientIdentifierType.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\ClientIncidentReport.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\ClientInventory.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\ClientJobHistory.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\ClientLeaf.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\ClientLeaveSchedule.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\ClientMedicationLog.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\ClientMovement.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\ClientOffens.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\ClientOTCMedicationLog.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\ClientOtherEmployment.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\ClientOtherInfo.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\ClientPassSite.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\ClientPhone.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\ClientPhoto.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\ClientPhysicalCharacteristic.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\ClientPositiveIncident.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\ClientPrescription.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\ClientProgramConfinement.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\ClientProgramEnrollment.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\ClientProgramEnrollmentDocket.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\ClientProgramFinancial.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\ClientProgramPhas.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\ClientProgramPlacement.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\ClientProgramPlacementHour.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\ClientProgramStatu.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\ClientResidentFinancialAccount.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\ClientResidentFinancialAccountDetail.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\ClientRoom.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\ClientScreening.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\ClientScreeningApprovalCondition.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\ClientScreeningMedication.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\ClientScreeningOffens.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\ClientScreeningPreviousDenial.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\ClientScreeningProgram.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\ClientScreeningPsychCondition.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\ClientSecurityFlag.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\ClientSecurityLevel.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\ClientSecurityProcedure.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\ClientSessionNote.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\ClientSessionNoteCurriculum.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\ClientSignature.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\ClientSignOutHold.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\ClientStatu.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\ClientTreatmentPlan.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\ClientTreatmentPlanAction.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\ClientTreatmentPlanGoal.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\ClientVehicle.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\Company.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\CompanyFinancial.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\CompanyFinancialAccount.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\ConfinementType.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\ContactNoteTemplate.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\CustomField.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\CustomFieldsData.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\Destination.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\EmailSubscription.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\Employer.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\FederalIncidentReportCode.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\FeeType.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\fn_dates_Result.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\fn_GetStatisticalCounts_Result.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\fn_GetStatisticalCount_ConfinementDays_Result.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\fn_GetStatisticalCount_PlacementHours_Result.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\fn_Split_Result.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\FormEntity.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\FormField.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\FormQuery.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\GlobalCode.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\GlobalCodeCategory.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\Group.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\Headcount.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\HeadcountDetail.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\IdentifierType.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\IncidentReportCode.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\InstallInfo.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\InventoryType.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\JobScheduleLog.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\LetterTemplate.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\MailBox.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\Medication.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\MedicationBin.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\MedicationSubClass.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\Offens.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\PaymentLocation.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\PaymentType.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\Physician.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\PlacementSite.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\Portlet.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\Program.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\ProgramPhas.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\Queue.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\QueueStep.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\QueueStepAction.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\rClientScreeningApplication.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\RecurringWorkFlow.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\RecurringWorkFlowAction.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\RecurringWorkFlowActionParameter.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\RecurringWorkFlowAssociatedColumn.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\RecurringWorkFlowStepAction.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\RecurringWorkFlowType.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\ReferralSource.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\Report.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\ResidentialRoomSearchSchedule.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\Role.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\RoleDocumentType.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\RolePermission.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\RoleReport.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\RoleTransaction.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\Room.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\RoomBed.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\RoomSearchSchedule.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\Screen.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\ScreenHelp.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\SecurityFlag.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\SecurityLevel.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\SecurityProcedureRequirement.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\ShiftNote.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\ShiftNoteClient.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\ShiftNoteRelationship.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\ShiftNoteType.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\SpecialSecuritySetup.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\SQLTableAndColumn.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\SQLValue.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\StaffGroup.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\sysdiagram.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\TabSource.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\Task.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\TempActionScript.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\TempCheckPreview.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\TerminationReason.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\TraceCheckRegister.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\TransactionCategoriesRF.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\TransactionType.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\TransactionTypesCF.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\TransactionTypesRF.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\TreatmentGroup.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\TreatmentGroupCalendar.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\TreatmentGroupCurriculum.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\TreatmentPlanActionTemplate.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\TreatmentPlanGoalTemplate.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\TreatmentPlanTemplate.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\User.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\UserPortlet.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\UserQuickLink.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\UserReport.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\UserRole.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\UserUploadFolder.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\vCallCode.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\vCallCodeSchedule.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\vClient.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\vClientAddress.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\vClientAlert.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\vClientAlternateName.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\vClientArrestInfo.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\vClientAssessment.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\vClientBondInfo.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\vClientCallCode.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\vClientCaseFile.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\vClientCommunityFinancialDetail.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\vClientContactNote.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\vClientDiagnos.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\vClientDrugsOfChoice.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\vClientDrugTreatment.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\vClientDrugUseHistory.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\vClientEducation.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\vClientEmergencyContact.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\vClientEmployment.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\vClientEmploymentSkill.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\vClientFederalIncidentReport.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\vClientGroupRegistration.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\vClientIdentifier.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\vClientIncidentReport.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\vClientInventory.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\vClientJobHistory.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\vClientLeaf.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\vClientLeaveSchedule.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\vClientMedicationLog.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\vClientMovement.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\vClientOffens.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\vClientOtherEmployment.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\vClientOtherInfo.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\vClientPassSite.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\vClientPhone.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\vClientPhysicalCharacteristic.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\vClientPositiveIncident.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\vClientPrescription.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\vClientProgramEnrollment.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\vClientProgramEnrollmentConfinement.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\vClientProgramEnrollmentDocket.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\vClientProgramEnrollmentPhas.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\vClientProgramEnrollmentPlacement.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\vClientProgramEnrollmentStatu.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\vClientProgramFinancial.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\vClientRoom.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\vClientScreening.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\vClientScreeningApprovalCondition.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\vClientScreeningMedication.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\vClientScreeningOffens.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\vClientScreeningPreviousDenial.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\vClientScreeningProgram.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\vClientScreeningPsychCondition.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\vClientSecurityFlag.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\vClientSecurityLevel.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\vClientSecurityProcedure.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\vClientSessionNote.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\vClientSignOutHold.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\vClientStatu.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\vClientTreatmentPlan.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\vClientTreatmentPlanAction.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\vClientTreatmentPlanGoal.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\vClientVehicle.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\vGlobalCode.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\Visitor.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\VisitorLog.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\vRoomSearchSchedule.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\vSecurityProcedureRequirement.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\vShiftNote.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\vTask.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\WordTemplate.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\WordTemplateEntity.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\Workflow.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\WorkFlowAction.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\WorkFlowActionParameter.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\WorkFlowEvent.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\WorkFlowEventAssociatedColumn.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\WorkflowEventOffsetField.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\WorkflowStep.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\WorkFlowStepAction.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
     <Compile Include="IRepository\IDashBoardRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository\DashBoardRepository.cs" />
@@ -60,10 +951,27 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <EntityDeploy Include="Context\CaseManagementDB.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>CaseManagementDB.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="App.Config" />
+    <None Include="Context\CaseManagementDB.edmx.diagram">
+      <DependentUpon>CaseManagementDB.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Context\" />
+    <Content Include="Context\CaseManagementDB.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>CaseManagementDB.edmx</DependentUpon>
+      <LastGenOutput>CaseManagementDB.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Context\CaseManagementDB.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>CaseManagementDB.edmx</DependentUpon>
+      <LastGenOutput>CaseManagementDB.cs</LastGenOutput>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

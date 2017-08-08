@@ -60,3 +60,7 @@ D:\SaddamHusaain\GIT\FirstProject\CaseManagement\DITS.Case.Management\CaseManage
 D:\SaddamHusaain\GIT\FirstProject\CaseManagement\DITS.Case.Management\CaseManagement.API\bin\Ninject.Web.WebApi.xml
 D:\SaddamHusaain\GIT\FirstProject\CaseManagement\DITS.Case.Management\CaseManagement.API\bin\Ninject.Web.dll
 D:\SaddamHusaain\GIT\FirstProject\CaseManagement\DITS.Case.Management\CaseManagement.API\bin\Ninject.Web.xml
+D:\SaddamHusaain\GIT\FirstProject\CaseManagement\DITS.Case.Management\CaseManagement.API\bin\EntityFramework.dll
+D:\SaddamHusaain\GIT\FirstProject\CaseManagement\DITS.Case.Management\CaseManagement.API\bin\EntityFramework.xml
+D:\SaddamHusaain\GIT\FirstProject\CaseManagement\DITS.Case.Management\CaseManagement.API\bin\EntityFramework.SqlServer.dll
+D:\SaddamHusaain\GIT\FirstProject\CaseManagement\DITS.Case.Management\CaseManagement.API\bin\EntityFramework.SqlServer.xml

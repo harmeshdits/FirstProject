@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CaseManagement.Entities.Response;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,6 +9,6 @@ namespace CaseMangement.Repository.IRepository
 {
     public interface IDashBoardRepository
     {
-        string test();
+        Task<TaskCompletedResponse> GetTaskCompletedListInMonthsOneYear();
     }
 }

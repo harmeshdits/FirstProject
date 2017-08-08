@@ -1,0 +1,687 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="9ee3be70bb12457db6776743d08cf0b6" Name="Diagram1">
+        <EntityTypeShape EntityType="CaseManagementModel.AccountingPeriod" Width="1.5" PointX="5.25" PointY="264.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.Announcement" Width="1.5" PointX="7.5" PointY="544.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.ASPStateTempApplication" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.ASPStateTempSession" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.Audit_AccountingPeriods" Width="1.5" PointX="8.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.Audit_ClientCallCodes" Width="1.5" PointX="8.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.Audit_ClientContactNotes" Width="1.5" PointX="10.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.Audit_ClientEducation" Width="1.5" PointX="12.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.Audit_ClientFederalIncidentReports" Width="1.5" PointX="12.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.Audit_ClientIncidentReports" Width="1.5" PointX="14.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.Audit_ClientPositiveIncidents" Width="1.5" PointX="8.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.Audit_ClientProgramConfinements" Width="1.5" PointX="14.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.Audit_ClientProgramEnrollments" Width="1.5" PointX="10.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.Audit_ClientProgramFinancials" Width="1.5" PointX="12.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.Audit_ClientProgramPhases" Width="1.5" PointX="14.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.Audit_ClientProgramPlacements" Width="1.5" PointX="16.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.Audit_ClientProgramStatus" Width="1.5" PointX="16.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.Audit_ClientRooms" Width="1.5" PointX="16.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.Audit_Clients" Width="1.5" PointX="0.75" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.Audit_ClientSecurityFlags" Width="1.5" PointX="2.75" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.Audit_ClientSecurityProcedures" Width="1.5" PointX="16.75" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.Audit_ClientSessionNotes" Width="1.5" PointX="18.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.Audit_ClientStatus" Width="1.5" PointX="18.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.Audit_ClientTreatmentPlanActions" Width="1.5" PointX="18.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.Audit_ClientTreatmentPlanGoals" Width="1.5" PointX="18.75" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.Audit_ClientTreatmentPlans" Width="1.5" PointX="20.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.Audit_ClientVehicles" Width="1.5" PointX="20.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.Audit_Tasks" Width="1.5" PointX="20.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.CallCode" Width="1.5" PointX="7.5" PointY="450" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.CallCodeSchedule" Width="1.5" PointX="9.75" PointY="471.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.CheckRegister" Width="1.5" PointX="9.75" PointY="525.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.ClientAddress" Width="1.5" PointX="7.5" PointY="422.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.ClientAlert" Width="1.5" PointX="7.5" PointY="495.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.ClientAlternateName" Width="1.5" PointX="10.5" PointY="425.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.ClientArrestInfo" Width="1.5" PointX="10.5" PointY="419.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.ClientAssessmentFile" Width="1.5" PointX="9.75" PointY="383.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.ClientAssessment" Width="1.5" PointX="5.25" PointY="349.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.ClientBike" Width="1.5" PointX="7.5" PointY="428.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.ClientBondInfo" Width="1.5" PointX="13.5" PointY="425.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.ClientCallCode" Width="1.5" PointX="22" PointY="417" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.ClientCaseFile" Width="1.5" PointX="7.5" PointY="416.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.ClientCommunityFinancialDetail" Width="1.5" PointX="21" PointY="532.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.ClientCommunityFinancial" Width="1.5" PointX="10.5" PointY="577.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.ClientCommunityFinancialsQuickPay" Width="1.5" PointX="18.75" PointY="525.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.ClientCommunityFinancialToDo" Width="1.5" PointX="21" PointY="492.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.ClientConflict" Width="1.5" PointX="7.5" PointY="506.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.ClientContactNote" Width="1.5" PointX="9.75" PointY="477" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.ClientDiagnos" Width="1.5" PointX="13.5" PointY="421.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.ClientDocket" Width="1.5" PointX="16.5" PointY="423.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.ClientDrugsOfChoice" Width="1.5" PointX="13.5" PointY="416.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.ClientDrugTreatment" Width="1.5" PointX="10.5" PointY="431.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.ClientDrugUseHistory" Width="1.5" PointX="7.5" PointY="510.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.ClientEducation" Width="1.5" PointX="13.5" PointY="432" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.ClientEmergencyContact" Width="1.5" PointX="16.5" PointY="413.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.ClientEmployment" Width="1.5" PointX="10.5" PointY="414.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.ClientEmploymentSkill" Width="1.5" PointX="7.5" PointY="434.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.ClientFederalIncidentReport" Width="1.5" PointX="12.75" PointY="482.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.ClientGroupRegistration" Width="1.5" PointX="8.25" PointY="349.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.ClientIdentifier" Width="1.5" PointX="7.5" PointY="500.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.ClientIdentifierType" Width="1.5" PointX="5.25" PointY="515.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.ClientIncidentReport" Width="1.5" PointX="15.75" PointY="484.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.ClientInventory" Width="1.5" PointX="9.75" PointY="562.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.ClientJobHistory" Width="1.5" PointX="10.5" PointY="456.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.ClientLeaf" Width="1.5" PointX="21.75" PointY="480" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.ClientLeaveSchedule" Width="1.5" PointX="30" PointY="474.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.ClientMedicationLog" Width="1.5" PointX="12.75" PointY="476.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.ClientMovement" Width="1.5" PointX="16.5" PointY="434" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.ClientOffens" Width="1.5" PointX="18.75" PointY="509" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.ClientOTCMedicationLog" Width="1.5" PointX="15.75" PointY="478.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.ClientOtherEmployment" Width="1.5" PointX="19.5" PointY="424.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.ClientOtherInfo" Width="1.5" PointX="7.5" PointY="461" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.ClientPassSite" Width="1.5" PointX="7.5" PointY="410.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.ClientPhone" Width="1.5" PointX="19.5" PointY="431.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.ClientPhoto" Width="1.5" PointX="19.5" PointY="419.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.ClientPhysicalCharacteristic" Width="1.5" PointX="19.5" PointY="411.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.ClientPositiveIncident" Width="1.5" PointX="21" PointY="556.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.ClientPrescription" Width="1.5" PointX="9.75" PointY="463.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.ClientProgramConfinement" Width="1.5" PointX="24" PointY="490.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.ClientProgramEnrollmentDocket" Width="1.5" PointX="21" PointY="459.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.ClientProgramEnrollment" Width="1.5" PointX="18.75" PointY="485.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.ClientProgramFinancial" Width="1.5" PointX="21" PointY="566.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.ClientProgramPhas" Width="1.5" PointX="24" PointY="479.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.ClientProgramPlacementHour" Width="1.5" PointX="23.25" PointY="546.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.ClientProgramPlacement" Width="1.5" PointX="21" PointY="546" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.ClientProgramStatu" Width="1.5" PointX="25" PointY="418.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.ClientResidentFinancialAccountDetail" Width="1.5" PointX="5.25" PointY="486.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.ClientResidentFinancialAccount" Width="1.5" PointX="10.5" PointY="450.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.ClientRoom" Width="1.5" PointX="10.5" PointY="504.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.Client" Width="1.5" PointX="5.25" PointY="498.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.ClientScreeningApprovalCondition" Width="1.5" PointX="22" PointY="422.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.ClientScreeningMedication" Width="1.5" PointX="22" PointY="412.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.ClientScreeningOffens" Width="1.5" PointX="21" PointY="501.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.ClientScreeningPreviousDenial" Width="1.5" PointX="22" PointY="427.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.ClientScreeningProgram" Width="1.5" PointX="23.75" PointY="470.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.ClientScreeningPsychCondition" Width="1.5" PointX="16" PointY="409.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.ClientScreening" Width="1.5" PointX="12.75" PointY="492.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.ClientSecurityFlag" Width="1.5" PointX="10.5" PointY="499" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.ClientSecurityLevel" Width="1.5" PointX="24" PointY="485.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.ClientSecurityProcedure" Width="1.5" PointX="27" PointY="486.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.ClientSessionNoteCurriculum" Width="1.5" PointX="21.25" PointY="470.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.ClientSessionNote" Width="1.5" PointX="15.5" PointY="470.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.ClientSignature" Width="1.5" PointX="7.5" PointY="535.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.ClientSignOutHold" Width="1.5" PointX="7.5" PointY="539.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.ClientStatu" Width="1.5" PointX="13.5" PointY="411.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.ClientTreatmentPlanAction" Width="1.5" PointX="25.5" PointY="438.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.ClientTreatmentPlanGoal" Width="1.5" PointX="23.25" PointY="438.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.ClientTreatmentPlan" Width="1.5" PointX="21" PointY="539.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.ClientVehicle" Width="1.5" PointX="10.5" PointY="435.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.Company" Width="1.5" PointX="5.25" PointY="559.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.CompanyFinancialAccount" Width="1.5" PointX="7.5" PointY="548.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.CompanyFinancial" Width="1.5" PointX="9.75" PointY="556.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.ConfinementType" Width="1.5" PointX="21.75" PointY="506.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.ContactNoteTemplate" Width="1.5" PointX="18.75" PointY="395.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.CustomField" Width="1.5" PointX="7.5" PointY="444.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.CustomFieldsData" Width="1.5" PointX="7.5" PointY="373.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.Destination" Width="1.5" PointX="5.25" PointY="552.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.EmailSubscription" Width="1.5" PointX="10.5" PointY="446" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.Employer" Width="1.5" PointX="5.25" PointY="570.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.FederalIncidentReportCode" Width="1.5" PointX="5.25" PointY="576.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.FeeType" Width="1.5" PointX="7.5" PointY="562.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.FormEntity" Width="1.5" PointX="16.5" PointY="442.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.FormField" Width="1.5" PointX="18.75" PointY="442.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.FormQuery" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.GlobalCodeCategory" Width="1.5" PointX="0.75" PointY="350" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.GlobalCode" Width="1.5" PointX="3" PointY="336.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.Group" Width="1.5" PointX="24.75" PointY="465.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.Headcount" Width="1.5" PointX="13.5" PointY="444.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.HeadcountDetail" Width="1.5" PointX="19.5" PointY="436.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.IdentifierType" Width="1.5" PointX="5.25" PointY="519.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.IncidentReportCode" Width="1.5" PointX="5.25" PointY="581.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.InventoryType" Width="1.5" PointX="7.5" PointY="573.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.JobScheduleLog" Width="1.5" PointX="12.75" PointY="20.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.LetterTemplate" Width="1.5" PointX="7.5" PointY="578.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.MailBox" Width="1.5" PointX="5.25" PointY="586.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.MedicationBin" Width="1.5" PointX="7.5" PointY="582.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.Medication" Width="1.5" PointX="7.5" PointY="590.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.MedicationSubClass" Width="1.5" PointX="5.25" PointY="591.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.Offens" Width="1.5" PointX="5.25" PointY="595.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.PaymentLocation" Width="1.5" PointX="16.5" PointY="526.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.PaymentType" Width="1.5" PointX="5.25" PointY="600.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.Physician" Width="1.5" PointX="7.5" PointY="467" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.PlacementSite" Width="1.5" PointX="5.25" PointY="604.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.Portlet" Width="1.5" PointX="10.5" PointY="613.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.ProgramPhas" Width="1.5" PointX="18.75" PointY="465.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.Program" Width="1.5" PointX="16.5" PointY="452.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.Queue" Width="1.5" PointX="9.75" PointY="665.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.QueueStepAction" Width="1.5" PointX="17.25" PointY="671.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.QueueStep" Width="1.5" PointX="15" PointY="668.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.RecurringWorkFlowActionParameter" Width="1.5" PointX="3" PointY="13.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.RecurringWorkFlowAction" Width="1.5" PointX="0.75" PointY="13" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.RecurringWorkFlowAssociatedColumn" Width="1.5" PointX="20.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.RecurringWorkFlow" Width="1.5" PointX="3.75" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.RecurringWorkFlowStepAction" Width="1.5" PointX="6" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.RecurringWorkFlowType" Width="1.5" PointX="1.5" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.ReferralSource" Width="1.5" PointX="5.25" PointY="611.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.Report" Width="1.5" PointX="5.25" PointY="616.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.ResidentialRoomSearchSchedule" Width="1.5" PointX="7.5" PointY="632.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.RoleDocumentType" Width="1.5" PointX="8.25" PointY="345.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.RolePermission" Width="1.5" PointX="8.25" PointY="394.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.RoleReport" Width="1.5" PointX="7.5" PointY="614.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.Role" Width="1.5" PointX="6" PointY="344" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.RoleTransaction" Width="1.5" PointX="7.5" PointY="652.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.RoomBed" Width="1.5" PointX="7.5" PointY="484.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.Room" Width="1.5" PointX="5.25" PointY="632" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.RoomSearchSchedule" Width="1.5" PointX="9.75" PointY="492.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.ScreenHelp" Width="1.5" PointX="7.5" PointY="456.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.Screen" Width="1.5" PointX="5.25" PointY="444.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.SecurityFlag" Width="1.5" PointX="8.25" PointY="515.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.SecurityLevel" Width="1.5" PointX="18.75" PointY="470.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.SecurityProcedureRequirement" Width="1.5" PointX="21" PointY="403.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.ShiftNoteClient" Width="1.5" PointX="10.5" PointY="509.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.ShiftNoteRelationship" Width="1.5" PointX="9.75" PointY="598.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.ShiftNote" Width="1.5" PointX="7.5" PointY="595.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.ShiftNoteType" Width="1.5" PointX="5.25" PointY="627.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.SpecialSecuritySetup" Width="1.5" PointX="5.25" PointY="637.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.SQLTableAndColumn" Width="1.5" PointX="22.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.SQLValue" Width="1.5" PointX="0.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.StaffGroup" Width="1.5" PointX="9.75" PointY="623.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.sysdiagram" Width="1.5" PointX="2.75" PointY="22.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.TabSource" Width="1.5" PointX="22.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.Task" Width="1.5" PointX="27" PointY="478.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.TempActionScript" Width="1.5" PointX="22.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.TerminationReason" Width="1.5" PointX="7.5" PointY="605.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.TraceCheckRegister" Width="1.5" PointX="22.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.TransactionCategoriesRF" Width="1.5" PointX="5.25" PointY="643.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.TransactionType" Width="1.5" PointX="5.25" PointY="648.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.TransactionTypesCF" Width="1.5" PointX="5.25" PointY="652.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.TransactionTypesRF" Width="1.5" PointX="12.75" PointY="450.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.TreatmentGroupCalendar" Width="1.5" PointX="9.75" PointY="627.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.TreatmentGroupCurriculum" Width="1.5" PointX="18" PointY="480.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.TreatmentGroup" Width="1.5" PointX="12.75" PointY="625.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.TreatmentPlanActionTemplate" Width="1.5" PointX="23.25" PointY="475" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.TreatmentPlanGoalTemplate" Width="1.5" PointX="21" PointY="474.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.TreatmentPlanTemplate" Width="1.5" PointX="18.75" PointY="474.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.UserPortlet" Width="1.5" PointX="12.75" PointY="621" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.UserQuickLink" Width="1.5" PointX="9.75" PointY="593.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.UserReport" Width="1.5" PointX="9.75" PointY="618.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.UserRole" Width="1.5" PointX="12.75" PointY="593.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.User" Width="1.5" PointX="7.5" PointY="618.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.UserUploadFolder" Width="1.5" PointX="22.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.VisitorLog" Width="1.5" PointX="13.5" PointY="456.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.Visitor" Width="1.5" PointX="5.25" PointY="656.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.WordTemplateEntity" Width="1.5" PointX="18.75" PointY="447.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.WordTemplate" Width="1.5" PointX="16.5" PointY="446.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.WorkFlowActionParameter" Width="1.5" PointX="12" PointY="685.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.WorkFlowAction" Width="1.5" PointX="9.75" PointY="676.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.WorkFlowEventAssociatedColumn" Width="1.5" PointX="7.5" PointY="666.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.WorkflowEventOffsetField" Width="1.5" PointX="9.75" PointY="681.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.WorkFlowEvent" Width="1.5" PointX="5.25" PointY="663.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.Workflow" Width="1.5" PointX="7.5" PointY="671.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.WorkFlowStepAction" Width="1.5" PointX="12" PointY="662.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.WorkflowStep" Width="1.5" PointX="9.75" PointY="671.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.InstallInfo" Width="1.5" PointX="22.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.TempCheckPreview" Width="1.5" PointX="22.75" PointY="22.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.rClientScreeningApplication" Width="1.5" PointX="8.75" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.vCallCode" Width="1.5" PointX="10.75" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.vCallCodeSchedule" Width="1.5" PointX="12.75" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.vClientAddress" Width="1.5" PointX="14.75" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.vClientAlert" Width="1.5" PointX="16.75" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.vClientAlternateName" Width="1.5" PointX="18.75" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.vClientArrestInfo" Width="1.5" PointX="24.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.vClientAssessment" Width="1.5" PointX="24.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.vClientBondInfo" Width="1.5" PointX="24.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.vClientCallCode" Width="1.5" PointX="24.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.vClientCaseFile" Width="1.5" PointX="24.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.vClientCommunityFinancialDetail" Width="1.5" PointX="24.75" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.vClientContactNote" Width="1.5" PointX="0.75" PointY="25.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.vClientDiagnos" Width="1.5" PointX="2.75" PointY="25.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.vClientDrugsOfChoice" Width="1.5" PointX="26.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.vClientDrugTreatment" Width="1.5" PointX="26.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.vClientDrugUseHistory" Width="1.5" PointX="4.75" PointY="26.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.vClientEducation" Width="1.5" PointX="26.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.vClientEmergencyContact" Width="1.5" PointX="26.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.vClientEmployment" Width="1.5" PointX="26.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.vClientEmploymentSkill" Width="1.5" PointX="26.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.vClientFederalIncidentReport" Width="1.5" PointX="20.75" PointY="26.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.vClientGroupRegistration" Width="1.5" PointX="26.75" PointY="22.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.vClientIdentifier" Width="1.5" PointX="16.75" PointY="27.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.vClientIncidentReport" Width="1.5" PointX="28.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.vClientInventory" Width="1.5" PointX="28.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.vClientJobHistory" Width="1.5" PointX="10.75" PointY="28.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.vClientLeaf" Width="1.5" PointX="12.75" PointY="28.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.vClientLeaveSchedule" Width="1.5" PointX="28.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.vClientMedicationLog" Width="1.5" PointX="28.75" PointY="20.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.vClientMovement" Width="1.5" PointX="22.75" PointY="28.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.vClientOffens" Width="1.5" PointX="28.75" PointY="24.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.vClientOtherEmployment" Width="1.5" PointX="24.75" PointY="28.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.vClientOtherInfo" Width="1.5" PointX="2.75" PointY="29.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.vClientPassSite" Width="1.5" PointX="4.75" PointY="29.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.vClientPhone" Width="1.5" PointX="26.75" PointY="29.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.vClientPhysicalCharacteristic" Width="1.5" PointX="28.75" PointY="29.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.vClientPositiveIncident" Width="1.5" PointX="30.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.vClientPrescription" Width="1.5" PointX="30.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.vClientProgramEnrollmentConfinement" Width="1.5" PointX="30.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.vClientProgramEnrollmentDocket" Width="1.5" PointX="30.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.vClientProgramEnrollmentPhas" Width="1.5" PointX="14.75" PointY="30.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.vClientProgramEnrollmentPlacement" Width="1.5" PointX="16.75" PointY="30.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.vClientProgramEnrollment" Width="1.5" PointX="30.75" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.vClientProgramEnrollmentStatu" Width="1.5" PointX="32.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.vClientProgramFinancial" Width="1.5" PointX="32.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.vClientRoom" Width="1.5" PointX="32.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.vClient" Width="1.5" PointX="32.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.vClientScreeningApprovalCondition" Width="1.5" PointX="32.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.vClientScreeningMedication" Width="1.5" PointX="32.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.vClientScreeningOffens" Width="1.5" PointX="32.75" PointY="24.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.vClientScreeningPreviousDenial" Width="1.5" PointX="32.75" PointY="27.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.vClientScreeningProgram" Width="1.5" PointX="32.75" PointY="30.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.vClientScreeningPsychCondition" Width="1.5" PointX="24.75" PointY="33.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.vClientScreening" Width="1.5" PointX="32.75" PointY="33.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.vClientSecurityFlag" Width="1.5" PointX="34.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.vClientSecurityLevel" Width="1.5" PointX="2.75" PointY="34.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.vClientSecurityProcedure" Width="1.5" PointX="34.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.vClientSessionNote" Width="1.5" PointX="4.75" PointY="34.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.vClientSignOutHold" Width="1.5" PointX="34.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.vClientStatu" Width="1.5" PointX="34.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.vClientTreatmentPlanAction" Width="1.5" PointX="34.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.vClientTreatmentPlanGoal" Width="1.5" PointX="34.75" PointY="20.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.vClientTreatmentPlan" Width="1.5" PointX="34.75" PointY="24.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.vClientVehicle" Width="1.5" PointX="34.75" PointY="29.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.vGlobalCode" Width="1.5" PointX="34.75" PointY="34.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.vRoomSearchSchedule" Width="1.5" PointX="6.75" PointY="35.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.vSecurityProcedureRequirement" Width="1.5" PointX="8.75" PointY="35.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.vShiftNote" Width="1.5" PointX="14.75" PointY="35.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CaseManagementModel.vTask" Width="1.5" PointX="16.75" PointY="35.75" IsExpanded="true" />
+        <AssociationConnector Association="CaseManagementModel.AccountingPeriods_GlobalCodes_AccountingPeriodStatus_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.AccountingPeriods_GlobalCodes_AccountingPeriodStatusRF_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.Announcements_Companies_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.CallCodes_Companies_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.CallCodes_GlobalCodes_SchedulingPeriod_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.CallCodeSchedule_CallCodes_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientCallCodes_CallCodes_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.CheckRegister_ClientResidentFinancialAccountDetails_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.CheckRegister_Companies_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.CheckRegister_CompanyFinancialAccounts_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.CheckRegister_CompanyFinancials_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientAddresses_Clients_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientAddresses_GlobalCodes_AddressType_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientAddresses_GlobalCodes_State_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientAlerts_Clients_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientAlternateNames_Clients_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientAlternateNames_GlobalCodes_Prefix_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientAlternateNames_GlobalCodes_Surname_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientArrestInfo_Clients_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientArrestInfo_GlobalCodes_FailureToAppear_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientArrestInfo_GlobalCodes_ParoleEligibility_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientAssessmentFiles_ClientAssessments_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientAssessmentFiles_ClientCaseFile_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientAssessments_ClientProgramEnrollments_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientAssessments_GlobalCodes_AssessmentStatus_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientAssessments_GlobalCodes_AssessmentType_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientBikes_Clients_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientBikes_GlobalCodes_Gender_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientBondInfo_Clients_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientBondInfo_GlobalCodes_State_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientCallCodes_ClientProgramEnrollments_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientCallCodes_GlobalCodes_SecurityProcedureType_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientCaseFile_ClientProgramEnrollments_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientCaseFile_Clients_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientCaseFile_GlobalCodes_DocumentType_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientCommunityFinancialDetails_ClientCommunityFinancials_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientCommunityFinancialDetails_ClientProgramEnrollments_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientCommunityFinancials_Clients_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientCommunityFinancials_PaymentTypes_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientCommunityFinancials_TransactionTypesCF_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientCommunityFinancialsQuickPay_PaymentLocations_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientCommunityFinancialsQuickPay_PaymentTypes_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientCommunityFinancialsQuickPay_Programs_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientCommunityFinancialToDos_ClientProgramEnrollments_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientConflicts_Clients_1_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientConflicts_Clients_2_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientContactNotes_ClientProgramEnrollments_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientContactNotes_Clients_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientContactNotes_GlobalCodes_NoteType_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientContactNotes_Users_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientDiagnoses_Clients_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientDiagnoses_GlobalCodes_Diagnosis_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientDockets_Clients_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientDockets_GlobalCodes_County_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientDockets_GlobalCodes_Court_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientDockets_GlobalCodes_District_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientDockets_GlobalCodes_Sentence_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientOffenses_ClientDockets_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientProgramEnrollmentDockets_ClientDockets_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientDrugsOfChoice_Clients_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientDrugsOfChoice_GlobalCodes_Drug_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientDrugTreatment_Clients_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientDrugTreatment_GlobalCodes_TreatmentFacilities_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientDrugUseHistory_Clients_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientEducation_ClientEducation_EducationStatus_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientEducation_Clients_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientEducation_GlobalCodes_EducationLevel_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientEmergencyContacts_Clients_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientEmergencyContacts_ClientVehicles_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientEmergencyContacts_GlobalCodes_LicenseState_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientEmergencyContacts_GlobalCodes_State_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientLeaves_ClientEmergencyContacts_DepartTransDriver_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientLeaves_ClientEmergencyContacts_ReturnTransDriver_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientLeaveSchedules_ClientEmergencyContacts_InterimTransDriver_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientEmployment_Clients_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientEmployment_GlobalCodes_WorkStatus_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientEmploymentSkills_Clients_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientEmploymentSkills_GlobalCodes_EmploymentSkill_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientFederalIncidentReports_ClientProgramEnrollments_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientFederalIncidentReports_FederalIncidentReportCodes_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientFederalIncidentReports_GlobalCodes_IncidentReportStatus_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientFederalIncidentReports_GlobalCodes_IRFormality_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientFederalIncidentReports_Users_Investigator_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientFederalIncidentReports_Users_ReportingUsers_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientGroupRegistations_GlobalCodes_RegistrationStatus_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientGroupRegistations_TreatmentGroups_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientGroupRegistrations_ClientProgramEnrollments_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientSessionNotes_ClientGroupRegistations_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientIdentifiers_ClientIdentifierTypes_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientIdentifiers_Clients_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientIdentifiers_IdentifierTypes_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientProgramEnrollments_ClientIdentifiers_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientScreenings_ClientIdentifiers_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientIncidentReports_ClientProgramEnrollments_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientIncidentReports_GlobalCodes_IncidentReportStatus_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientIncidentReports_IncidentReportCodes_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientIncidentReports_Users_Investigator_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientIncidentReports_Users_ReportingUsers_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientIncidentReports_Users_RightsInformed_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientIncidentReports_Users_ServingUsers_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientInventory_Clients_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientInventory_InventoryTypes_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientInventory_Users_AddedBy_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientInventory_Users_RemovedBy_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientJobHistory_Clients_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientJobHistory_Employers_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientJobHistory_GlobalCodes_WorkType_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientLeaves_Clients_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientLeaves_ClientVehicles_DepartTransVehicle_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientLeaves_ClientVehicles_ReturnTransVehicle_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientLeaves_GlobalCodes_DepartTransMode_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientLeaves_GlobalCodes_LeaveType_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientLeaves_GlobalCodes_ReturnTransMode_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientLeaves_Users_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientLeaveSchedules_ClientLeaves_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientLeaveSchedules_ClientVehicles_InterimTransVehicle_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientLeaveSchedules_GlobalCodes_InterimTransMode_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientLeaveSchedules_GlobalCodes_ScheduleType_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientLeaveSchedules_Users_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientMedicationLog_ClientPrescriptions_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientMedicationLog_GlobalCodes_LogType_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientMedicationLog_Users_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientMovements_ClientProgramEnrollments_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientMovements_Clients_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientMovements_GlobalCodes_ExternalFacilities_PointOfDeparture_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientMovements_GlobalCodes_MovementStatus_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientMovements_GlobalCodes_MovementType_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientMovements_GlobalCodes_TransportationMode_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientMovements_Programs_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientOffenses_Clients_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientOffenses_Offenses_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientScreeningOffenses_ClientOffenses_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientOTCMedicationLog_GlobalCodes_LogType_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientOTCMedicationLog_GlobalCodes_OTCMedications_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientOTCMedicationLog_Users_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientOtherEmployment_Clients_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientOtherEmployment_GlobalCodes_State_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientOtherInfo_Clients_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientOtherInfo_GlobalCodes_BirthState_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientOtherInfo_MailBox_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientPassSites_Clients_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientPassSites_GlobalCodes_ScheduleType_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientPassSites_GlobalCodes_State_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientPhones_Clients_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientPhones_GlobalCodes_PhoneType_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientPhotos_Clients_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientPhotos_GlobalCodes_PhotoType_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientPhysicalCharacteristics_Clients_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientPhysicalCharacteristics_GlobalCodes_Build_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientPhysicalCharacteristics_GlobalCodes_Complexion_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientPhysicalCharacteristics_GlobalCodes_EyeColor_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientPhysicalCharacteristics_GlobalCodes_HairColor_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientPhysicalCharacteristics_GlobalCodes_Handed_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientPositiveIncidents_ClientProgramEnrollments_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientPositiveIncidents_Users_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientPrescriptions_Clients_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientPrescriptions_GlobalCodes_MedicationType_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientPrescriptions_MedicationBins_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientPrescriptions_Medications_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientPrescriptions_Physicians_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientProgramConfinements_ClientProgramEnrollments_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientProgramConfinements_ConfinementTypes_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientProgramEnrollmentDockets_ClientProgramEnrollments_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientProgramEnrollments_Clients_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientProgramEnrollments_ClientScreenings_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientProgramEnrollments_GlobalCodes_Billing_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientProgramEnrollments_GlobalCodes_ExternalFacilities_ReleaseTo_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientProgramEnrollments_GlobalCodes_ExternalFacilities_SecondaryRelease_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientProgramEnrollments_GlobalCodes_LabAccountNumber_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientProgramEnrollments_GlobalCodes_ManagingLocation_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientProgramEnrollments_GlobalCodes_TerminationReason_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientProgramEnrollments_Programs_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientProgramEnrollments_ReferralSources_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientProgramEnrollments_Users_CM_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientProgramEnrollments_Users_CM2_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientProgramFinancials_ClientProgramEnrollments_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientProgramPhases_ClientProgramEnrollments_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientProgramPlacements_ClientProgramEnrollments_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientProgramStatus_ClientProgramEnrollments_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientSecurityLevel_ClientProgramEnrollments_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientSecurityProcedures_ClientProgramEnrollments_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientTreatmentPlans_ClientProgramEnrollments_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.Tasks_ClientProgramEnrollments_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientProgramFinancials_TransactionTypes_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientProgramPhases_ProgramPhases_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientProgramPlacementHours_ClientProgramPlacements_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientProgramPlacements_PlacementSites_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientProgramStatus_GlobalCodes_ProgramStatus_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientProgramStatus_GlobalCodes_StatusChangeReason_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.GlobalCodes_ClientResidentFinancialAccountDetails_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientResidentFinancialAccounts_Clients_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientResidentFinancialAccounts_Companies_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientResidentFinancialAccounts_GlobalCodes_ResidentFinancialAccountType_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientRooms_Clients_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientRooms_RoomBeds_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.Clients_GlobalCodes_MaritalStatus_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.Clients_GlobalCodes_Prefix_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.Clients_GlobalCodes_Race_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.Clients_GlobalCodes_Sex_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.Clients_GlobalCodes_Surname_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientScreenings_Clients_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientSecurityFlags_Clients_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientSignatures_Clients_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientSignOutHolds_Clients_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientStatus_Clients_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientVehicles_Clients_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.HeadcountDetails_Clients_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ShiftNoteClients_Clients_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.Tasks_Clients_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.VisitorLogs_Clients_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientScreeningApprovalConditions_ClientScreenings_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientScreeningApprovalConditions_GlobalCodes_ApprovalCondition_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientScreeningMedications_ClientScreenings_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientScreeningMedications_GlobalCodes_ScreeningMedication_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientScreeningOffenses_ClientScreenings_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientScreeningPreviousDenials_ClientScreenings_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientScreeningPreviousDenials_GlobalCodes_TreatmentFacilities_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientScreeningPrograms_ClientScreenings_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientScreeningPrograms_Programs_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientScreeningPsychConditions_ClientScreenings_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientScreeningPsychConditions_GlobalCodes_PsychCondition_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientScreenings_GlobalCodes_DenialReason_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientScreenings_GlobalCodes_ScreeningStatus_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientScreenings_ReferralSources_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientScreenings_Users_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientSecurityFlags_SecurityFlags_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientSecurityLevel_SecurityLevel_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientSecurityProcedures_Companies_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientSecurityProcedures_GlobalCodes_ProcedureStatus_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientSecurityProcedures_GlobalCodes_SecurityProcedureType_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientSecurityProcedures_Users_AdministeredBy_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientSecurityProcedures_Users_RecordedBy_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientSessionNoteCurriculum_ClientSessionNotes_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientSessionNoteCurriculum_TreatmentGroupCurriculum_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientSessionNotes_GlobalCodes_Attendance_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientSessionNotes_GlobalCodes_BAResult_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientSessionNotes_Users_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientStatus_GlobalCodes_ClientStatusType_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientTreatmentPlanActions_ClientTreatmentPlanGoals_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientTreatmentPlanGoals_ClientTreatmentPlans_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientTreatmentPlanGoals_GlobalCodes_ProblemCategory_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientVehicles_GlobalCodes_State_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientVehicles_GlobalCodes_VehicleColor_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ClientVehicles_GlobalCodes_VehicleMake_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.Companies_GlobalCodes_CheckFormat_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.Companies_GlobalCodes_State_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.Companies_UserRoles_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.CompanyFinancialAccounts_Companies_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.CompanyFinancials_Companies_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.CustomFields_Companies_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.EmailSubscription_Companies_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.FeeTypes_Companies_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.Headcount_Companies_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.InventoryTypes_Companies_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.LetterTemplates_Companies_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.MedicationBins_Companies_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.Programs_Companies_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ShiftNotes_Companies_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.Tasks_Companies_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.TerminationReasons_Companies_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.TransactionTypesRF_Companies_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.UserQuickLinks_Companies_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.Users_Companies_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.VisitorLogs_Companies_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.WordTemplates_Companies_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.CompanyFinancialAccounts_CompanyFinancialAccounts_OffsetAccount_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.CompanyFinancialAccounts_CompanyFinancialAccounts_ParentAccount_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.CompanyFinancials_CompanyFinancialAccounts_AccountId_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.TransactionTypesRF_CompanyFinancialAccounts_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ContactNoteTemplates_GlobalCodes_NoteType_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ContactNoteTemplates_Programs_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.CustomFields_GlobalCodes_UDFFIELDDATATYPE_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.CustomFields_Screens_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.CustomFieldsData_Screens_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.Destinations_GlobalCodes_ScheduleType_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.Destinations_GlobalCodes_State_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.EmailSubscription_GlobalCodes_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.Employers_GlobalCodes_State_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.FederalIncidentReportCode_GlobalCodes_IRSeverity_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.FeeTypes_Programs_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.FK_FormFields_FormEntities" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.WordTemplateEntities_FormEntities_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.GlobalCodes_GlobalCodeCategories_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.GlobalCodes_RoleDocumentTypes_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.Headcount_GlobalCodes_Building_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.Headcount_GlobalCodes_HeadcountStatus_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.HeadcountDetails_GlobalCodes_ClientHeadcountStatus_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.IncidentReportCode_GlobalCodes_IRSeverity_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.MailBox_GlobalCodes_Building_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.MedicationClasses_GlobalCodes_MedicationClass_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.Offenses_GlobalCodes_Jurisdiction_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.Offenses_GlobalCodes_OffenseCategory_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.PaymentTypes_GlobalCodes_PaymentTypeGroup_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.PlacementSites_GlobalCodes_ManagingLocation_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.PlacementSites_GlobalCodes_PlacementSiteType_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.PlacementSites_GlobalCodes_State_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.Programs_GlobalCodes_GovernanceAgency_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.Programs_GlobalCodes_GroupRegistrationStatus_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.Programs_GlobalCodes_ProgramType_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.Programs_GlobalCodes_SecurityProcedureType_SignIn_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.Programs_GlobalCodes_SecurityProcedureType_SignOut_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.Programs_GlobalCodes_SecuritySchedulingType_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ReferralSources_GlobalCodes_ReferralCode_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ReferralSources_GlobalCodes_ReferralReportingGroup_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.Reports_GlobalCodes_DefaultReportFormat_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.Reports_GlobalCodes_ReportCategory_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.Reports_GlobalCodes_ReportType_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.RoomBeds_GlobalCodes_Bed_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.Rooms_GlobalCodes_Building_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.RoomSearchSchedule_GlobalCodes_ProcedureStatus_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.SecurityProcedureRequirements_GlobalCodes_SecurityProcedureType_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ShiftNoteTypes_GlobalCodes_Priority_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.SpecialSecuritySetup_GlobalCodes_Building_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.SpecialSecuritySetup_GlobalCodes_CommonAreaSchedulingPeriod_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.SpecialSecuritySetup_GlobalCodes_InventorySchedulingPeriod_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.SpecialSecuritySetup_GlobalCodes_ResidenceSchedulingPeriod_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.Tasks_GlobalCodes_TaskStatus_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.Tasks_GlobalCodes_TaskType_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.TransactionCategoriesRF_GlobalCodes_Flag_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.TransactionCategoriesRF_GlobalCodes_ResidentFinancialAccountType_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.TransactionTypes_GlobalCodes_Flag_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.TransactionTypesCF_GlobalCodes_Flag_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.TransactionTypesRF_GlobalCodes_RFTransactionCategory_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.TreatmentGroupCurriculum_GlobalCodes_CurriculumType_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.VisitorLogs_GlobalCodes_VisitType_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.Visitors_GlobalCodes_VisitorCategory_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.WordTemplates_GlobalCodes_WordTemplateType_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.WorkFlowEvents_GlobalCodes_EventType_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.Groups_StaffGroups_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.Tasks_Groups_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.HeadcountDetails_Headcount_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.Medications_MedicationClasses_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.UserPortlets_Portlets_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ProgramPhases_Programs_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.Programs_TreatmentPlanTemplates_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.SecurityLevel_Programs_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.Queue_QueueSteps_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.WorkFlowEvents_Queue_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.WorkFlows_Queue_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.QueueSteps_QueueStepActions_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.Tasks_QueueStepActions_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.WorkFlowStepActions_QueueStepActions_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.WorkflowSteps_QueueSteps_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.RecurringWorkFlowActions_RecurringWorkFlowActionParameters_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.RecurringWorkFlowActions_RecurringWorkFlowStepActions_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.RecurringWorkFlows_RecurringWorkFlowStepActions_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.RecurringWorkFlowTypes_RecurringWorkFlows_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.Reports_RoleReports_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.UserReports_Reports_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ResidentialRoomSearchSchedule_Rooms_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.Roles_RoleDocumentTypes_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.Roles_RolePermissions_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.Screens_RolePermissions_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.Roles_RoleReports_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.Roles_RoleTransactions_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.Roles_UserRoles_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.TransactionTypesCF_RoleTransactions_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.RoomBeds_Rooms_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.RoomSearchSchedule_Rooms_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.TreatmentGroupCalendar_Rooms_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.TreatmentGroups_Rooms_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.RoomSearchSchedule_Users_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.FK_ScreenHelp_Screens" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.Screens_Screens_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.UserQuickLinks_Screens_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.SecurityProcedureRequirements_SecurityLevel_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ShiftNoteClients_ShiftNotes_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ShiftNoteRelationships_ShiftNotes_FK_Child" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ShiftNoteRelationships_ShiftNotes_Parent_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.ShiftNotes_ShiftNoteTypes_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.Users_StaffGroups_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.Tasks_Users_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.TransactionTypesRF_TransactionTypesRF_ParentTransactionType_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.TreatmentGroupCalendar_TreatmentGroups_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.TreatmentGroupCalendar_Users_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.TreatmentGroupCurriculum_TreatmentGroups_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.TreatmentGroups_Users_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.TreatmentPlanGoalTemplates_TreatmentPlanActionTemplates_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.TreatmentPlanTemplates_TreatmentPlanGoalTemplates_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.UserPortlets_Users_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.UserQuickLinks_Users_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.UserReports_Users_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.Users_UserRoles_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.Users_Users_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.WordTemplateEntities_WordTemplates_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.WorkFlowActions_WorkFlowActionParameters_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.WorkFlowActions_WorkFlowStepActions_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.WorkFlowEvents_WorkFlowEventAssociatedColumns_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.WorkflowEventOffsetFields_WorkFlowStepActions_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.Events_Workflows_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.Worflows_WorkflowSteps_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="CaseManagementModel.WorkflowSteps_Queue_FK" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

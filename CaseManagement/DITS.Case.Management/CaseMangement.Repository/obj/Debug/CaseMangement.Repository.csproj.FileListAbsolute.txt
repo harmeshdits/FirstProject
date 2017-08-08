@@ -7,4 +7,8 @@ D:\SaddamHusaain\GIT\FirstProject\CaseManagement\DITS.Case.Management\CaseMangem
 D:\SaddamHusaain\GIT\FirstProject\CaseManagement\DITS.Case.Management\CaseMangement.Repository\obj\Debug\CaseMangement.Repository.csprojResolveAssemblyReference.cache
 D:\SaddamHusaain\GIT\FirstProject\CaseManagement\DITS.Case.Management\CaseMangement.Repository\obj\Debug\CaseMangement.Repository.dll
 D:\SaddamHusaain\GIT\FirstProject\CaseManagement\DITS.Case.Management\CaseMangement.Repository\obj\Debug\CaseMangement.Repository.pdb
+D:\SaddamHusaain\GIT\FirstProject\CaseManagement\DITS.Case.Management\CaseMangement.Repository\bin\Debug\EntityFramework.dll
+D:\SaddamHusaain\GIT\FirstProject\CaseManagement\DITS.Case.Management\CaseMangement.Repository\bin\Debug\EntityFramework.SqlServer.dll
+D:\SaddamHusaain\GIT\FirstProject\CaseManagement\DITS.Case.Management\CaseMangement.Repository\bin\Debug\EntityFramework.xml
+D:\SaddamHusaain\GIT\FirstProject\CaseManagement\DITS.Case.Management\CaseMangement.Repository\bin\Debug\EntityFramework.SqlServer.xml
 D:\SaddamHusaain\GIT\FirstProject\CaseManagement\DITS.Case.Management\CaseMangement.Repository\bin\Debug\CaseMangement.Repository.dll.config
