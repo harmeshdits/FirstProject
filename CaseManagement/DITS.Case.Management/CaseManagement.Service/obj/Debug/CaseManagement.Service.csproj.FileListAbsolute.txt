@@ -9,3 +9,5 @@ D:\SaddamHusaain\GIT\FirstProject\CaseManagement\DITS.Case.Management\CaseManage
 D:\SaddamHusaain\GIT\FirstProject\CaseManagement\DITS.Case.Management\CaseManagement.Service\obj\Debug\CaseManagement.Service.csprojResolveAssemblyReference.cache
 D:\SaddamHusaain\GIT\FirstProject\CaseManagement\DITS.Case.Management\CaseManagement.Service\obj\Debug\CaseManagement.Service.dll
 D:\SaddamHusaain\GIT\FirstProject\CaseManagement\DITS.Case.Management\CaseManagement.Service\obj\Debug\CaseManagement.Service.pdb
+D:\SaddamHusaain\GIT\FirstProject\CaseManagement\DITS.Case.Management\CaseManagement.Service\bin\Debug\EntityFramework.dll
+D:\SaddamHusaain\GIT\FirstProject\CaseManagement\DITS.Case.Management\CaseManagement.Service\bin\Debug\EntityFramework.xml

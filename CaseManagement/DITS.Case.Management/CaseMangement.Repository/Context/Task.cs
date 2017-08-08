@@ -34,5 +34,14 @@ namespace CaseMangement.Repository.Context
         public string RecordDeleted { get; set; }
         public string DeletedBy { get; set; }
         public Nullable<System.DateTime> DeletedDate { get; set; }
+    
+        public virtual ClientProgramEnrollment ClientProgramEnrollment { get; set; }
+        public virtual Client Client { get; set; }
+        public virtual Company Company { get; set; }
+        public virtual GlobalCode GlobalCode { get; set; }
+        public virtual GlobalCode GlobalCode1 { get; set; }
+        public virtual Group Group { get; set; }
+        public virtual QueueStepAction QueueStepAction { get; set; }
+        public virtual User User { get; set; }
     }
 }
