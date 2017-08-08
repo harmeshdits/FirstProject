@@ -6,7 +6,7 @@ import { MODULE_COMPONENTS, MODULE_ROUTES } from './dashboard.routes';
     imports: [
         RouterModule.forChild(MODULE_ROUTES)
     ],
-    declarations: [ MODULE_COMPONENTS ]
+    declarations: [MODULE_COMPONENTS]
 })
 
 export class DashboardModule{}

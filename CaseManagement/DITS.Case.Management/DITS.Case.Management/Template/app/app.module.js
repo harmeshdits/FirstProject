@@ -9,6 +9,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
 var router_1 = require("@angular/router");
+var http_1 = require("@angular/http");
 var app_component_1 = require("./app.component");
 var dashboard_component_1 = require("./dashboard/dashboard.component");
 var dashboard_module_1 = require("./dashboard/dashboard.module");
@@ -16,6 +17,7 @@ var sidebar_module_1 = require("./sidebar/sidebar.module");
 var footer_module_1 = require("./shared/footer/footer.module");
 var navbar_module_1 = require("./shared/navbar/navbar.module");
 var common_1 = require("@angular/common");
+var home_service_1 = require("./dashboard/home/home.service");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -23,6 +25,7 @@ var AppModule = (function () {
         core_1.NgModule({
             imports: [
                 platform_browser_1.BrowserModule,
+                http_1.HttpModule,
                 dashboard_module_1.DashboardModule,
                 sidebar_module_1.SidebarModule,
                 navbar_module_1.NavbarModule,
@@ -30,7 +33,7 @@ var AppModule = (function () {
                 router_1.RouterModule.forRoot([])
             ],
             declarations: [app_component_1.AppComponent, dashboard_component_1.DashboardComponent],
-            providers: [{ provide: common_1.LocationStrategy, useClass: common_1.HashLocationStrategy }],
+            providers: [home_service_1.HomeService, { provide: common_1.LocationStrategy, useClass: common_1.HashLocationStrategy }],
             bootstrap: [app_component_1.AppComponent]
         })
     ], AppModule);
