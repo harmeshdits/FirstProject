@@ -66,6 +66,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>CaseManagementDB.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Context\sp_GetTaskCompletedByMonth_Result.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\sp_GetTasksListComplete_Result.cs">
+      <DependentUpon>CaseManagementDB.tt</DependentUpon>
+    </Compile>
     <Compile Include="Context\Task.cs">
       <DependentUpon>CaseManagementDB.tt</DependentUpon>
     </Compile>

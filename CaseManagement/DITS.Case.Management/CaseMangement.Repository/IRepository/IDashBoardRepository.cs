@@ -9,6 +9,6 @@ namespace CaseMangement.Repository.IRepository
 {
     public interface IDashBoardRepository
     {
-        Task<TaskCompletedResponse> GetTaskCompletedListInMonthsOneYear();
+        Task<TaskCompletedListResponse> GetTaskCompletedListInMonthsOneYear();
     }
 }

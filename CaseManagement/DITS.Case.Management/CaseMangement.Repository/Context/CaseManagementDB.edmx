@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="CaseManagementModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="CaseManagementModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Tasks">
           <Key>
             <PropertyRef Name="TaskId" />
@@ -30,14 +30,61 @@
           <Property Name="DeletedBy" Type="varchar" MaxLength="50" />
           <Property Name="DeletedDate" Type="datetime" />
         </EntityType>
+        <Function Name="sp_GetTaskCompletedByMonth" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="sp_GetTasksListComplete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="taskid" Type="int" Mode="In" />
+          <Parameter Name="companyid" Type="int" Mode="In" />
+          <Parameter Name="programid" Type="int" Mode="In" />
+          <Parameter Name="staffid" Type="int" Mode="In" />
+          <Parameter Name="tasktype" Type="int" Mode="In" />
+          <Parameter Name="taskstatus" Type="int" Mode="In" />
+        </Function>
         <EntityContainer Name="CaseManagementModelStoreContainer">
           <EntitySet Name="Tasks" EntityType="Self.Tasks" Schema="dbo" store:Type="Tables" />
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="CaseManagementModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="CaseManagementEntities" annotation:LazyLoadingEnabled="true">
+          <FunctionImport Name="sp_GetTaskCompletedByMonth" ReturnType="Collection(CaseManagementModel.sp_GetTaskCompletedByMonth_Result)" />
+          <FunctionImport Name="sp_GetTasksListComplete" ReturnType="Collection(CaseManagementModel.sp_GetTasksListComplete_Result)">
+            <Parameter Name="taskid" Mode="In" Type="Int32" />
+            <Parameter Name="companyid" Mode="In" Type="Int32" />
+            <Parameter Name="programid" Mode="In" Type="Int32" />
+            <Parameter Name="staffid" Mode="In" Type="Int32" />
+            <Parameter Name="tasktype" Mode="In" Type="Int32" />
+            <Parameter Name="taskstatus" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <EntitySet Name="Tasks" EntityType="CaseManagementModel.Task" />
+        </EntityContainer>
+        <ComplexType Name="sp_GetTaskCompletedByMonth_Result">
+          <Property Type="String" Name="month" Nullable="true" MaxLength="30" />
+          <Property Type="Int32" Name="Column1" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="sp_GetTasksListComplete_Result">
+          <Property Type="Int32" Name="TaskId" Nullable="false" />
+          <Property Type="Int32" Name="QueueStepActionId" Nullable="true" />
+          <Property Type="Int32" Name="TaskTypeId" Nullable="false" />
+          <Property Type="String" Name="TaskType" Nullable="true" MaxLength="250" />
+          <Property Type="Int32" Name="ClientId" Nullable="true" />
+          <Property Type="Int32" Name="ClientProgramEnrollmentId" Nullable="true" />
+          <Property Type="Int32" Name="StaffId" Nullable="true" />
+          <Property Type="String" Name="Staff" Nullable="true" MaxLength="201" />
+          <Property Type="Int32" Name="GroupId" Nullable="true" />
+          <Property Type="String" Name="DueDate" Nullable="true" MaxLength="12" />
+          <Property Type="String" Name="CompletionDate" Nullable="true" MaxLength="12" />
+          <Property Type="String" Name="Comments" Nullable="true" />
+          <Property Type="String" Name="Active" Nullable="false" MaxLength="1" />
+          <Property Type="String" Name="GroupName" Nullable="true" MaxLength="250" />
+          <Property Type="Int32" Name="TaskStatusId" Nullable="true" />
+          <Property Type="String" Name="TaskStatus" Nullable="true" MaxLength="250" />
+          <Property Type="String" Name="EnrolledProgram" Nullable="true" MaxLength="500" />
+          <Property Type="DateTime" Name="DueDateFull" Nullable="true" Precision="23" />
+          <Property Type="String" Name="ClientName" Nullable="true" MaxLength="101" />
+          <Property Type="String" Name="DeleteImage" Nullable="false" MaxLength="14" />
+          <Property Type="String" Name="DeleteImageTitle" Nullable="false" MaxLength="15" />
+        </ComplexType>
         <EntityType Name="Task">
           <Key>
             <PropertyRef Name="TaskId" />
@@ -54,47 +101,79 @@
           <Property Name="DueDate" Type="DateTime" Precision="3" />
           <Property Name="CompletionDate" Type="DateTime" Precision="3" />
           <Property Name="Comments" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-          <Property Name="Active" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="Active" Type="String" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
           <Property Name="CreatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="ModifiedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="ModifiedDate" Type="DateTime" Nullable="false" Precision="3" />
-          <Property Name="RecordDeleted" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="RecordDeleted" Type="String" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
           <Property Name="DeletedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="DeletedDate" Type="DateTime" Precision="3" />
         </EntityType>
-        <EntityContainer Name="CaseManagementEntities" annotation:LazyLoadingEnabled="true">
-          <EntitySet Name="Tasks" EntityType="Self.Task" />
-        </EntityContainer>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
         <EntityContainerMapping StorageEntityContainer="CaseManagementModelStoreContainer" CdmEntityContainer="CaseManagementEntities">
-          <EntitySetMapping Name="Tasks">
-            <EntityTypeMapping TypeName="CaseManagementModel.Task">
-              <MappingFragment StoreEntitySet="Tasks">
+          <FunctionImportMapping FunctionImportName="sp_GetTaskCompletedByMonth" FunctionName="CaseManagementModel.Store.sp_GetTaskCompletedByMonth">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="CaseManagementModel.sp_GetTaskCompletedByMonth_Result">
+                <ScalarProperty Name="month" ColumnName="month" />
+                <ScalarProperty Name="Column1" ColumnName="Column1" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="sp_GetTasksListComplete" FunctionName="CaseManagementModel.Store.sp_GetTasksListComplete">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="CaseManagementModel.sp_GetTasksListComplete_Result">
                 <ScalarProperty Name="TaskId" ColumnName="TaskId" />
                 <ScalarProperty Name="QueueStepActionId" ColumnName="QueueStepActionId" />
+                <ScalarProperty Name="TaskTypeId" ColumnName="TaskTypeId" />
                 <ScalarProperty Name="TaskType" ColumnName="TaskType" />
-                <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
                 <ScalarProperty Name="ClientId" ColumnName="ClientId" />
                 <ScalarProperty Name="ClientProgramEnrollmentId" ColumnName="ClientProgramEnrollmentId" />
                 <ScalarProperty Name="StaffId" ColumnName="StaffId" />
+                <ScalarProperty Name="Staff" ColumnName="Staff" />
                 <ScalarProperty Name="GroupId" ColumnName="GroupId" />
-                <ScalarProperty Name="TaskStatus" ColumnName="TaskStatus" />
                 <ScalarProperty Name="DueDate" ColumnName="DueDate" />
                 <ScalarProperty Name="CompletionDate" ColumnName="CompletionDate" />
                 <ScalarProperty Name="Comments" ColumnName="Comments" />
                 <ScalarProperty Name="Active" ColumnName="Active" />
-                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
-                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
-                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
-                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
-                <ScalarProperty Name="RecordDeleted" ColumnName="RecordDeleted" />
-                <ScalarProperty Name="DeletedBy" ColumnName="DeletedBy" />
+                <ScalarProperty Name="GroupName" ColumnName="GroupName" />
+                <ScalarProperty Name="TaskStatusId" ColumnName="TaskStatusId" />
+                <ScalarProperty Name="TaskStatus" ColumnName="TaskStatus" />
+                <ScalarProperty Name="EnrolledProgram" ColumnName="EnrolledProgram" />
+                <ScalarProperty Name="DueDateFull" ColumnName="DueDateFull" />
+                <ScalarProperty Name="ClientName" ColumnName="ClientName" />
+                <ScalarProperty Name="DeleteImage" ColumnName="DeleteImage" />
+                <ScalarProperty Name="DeleteImageTitle" ColumnName="DeleteImageTitle" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <EntitySetMapping Name="Tasks">
+            <EntityTypeMapping TypeName="CaseManagementModel.Task">
+              <MappingFragment StoreEntitySet="Tasks">
                 <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
+                <ScalarProperty Name="DeletedBy" ColumnName="DeletedBy" />
+                <ScalarProperty Name="RecordDeleted" ColumnName="RecordDeleted" />
+                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="Comments" ColumnName="Comments" />
+                <ScalarProperty Name="CompletionDate" ColumnName="CompletionDate" />
+                <ScalarProperty Name="DueDate" ColumnName="DueDate" />
+                <ScalarProperty Name="TaskStatus" ColumnName="TaskStatus" />
+                <ScalarProperty Name="GroupId" ColumnName="GroupId" />
+                <ScalarProperty Name="StaffId" ColumnName="StaffId" />
+                <ScalarProperty Name="ClientProgramEnrollmentId" ColumnName="ClientProgramEnrollmentId" />
+                <ScalarProperty Name="ClientId" ColumnName="ClientId" />
+                <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+                <ScalarProperty Name="TaskType" ColumnName="TaskType" />
+                <ScalarProperty Name="QueueStepActionId" ColumnName="QueueStepActionId" />
+                <ScalarProperty Name="TaskId" ColumnName="TaskId" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -113,7 +192,7 @@
       <DesignerInfoPropertySet>
         <DesignerProperty Name="ValidateOnBuild" Value="true" />
         <DesignerProperty Name="EnablePluralization" Value="true" />
-        <DesignerProperty Name="IncludeForeignKeysInModel" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
         <DesignerProperty Name="UseLegacyProvider" Value="false" />
         <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
       </DesignerInfoPropertySet>

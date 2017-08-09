@@ -12,6 +12,8 @@ namespace CaseMangement.Repository.Context
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
+    using System.Data.Entity.Core.Objects;
+    using System.Linq;
     
     public partial class CaseManagementEntities : DbContext
     {
@@ -26,5 +28,39 @@ namespace CaseMangement.Repository.Context
         }
     
         public virtual DbSet<Task> Tasks { get; set; }
+    
+        public virtual ObjectResult<sp_GetTaskCompletedByMonth_Result> sp_GetTaskCompletedByMonth()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<sp_GetTaskCompletedByMonth_Result>("sp_GetTaskCompletedByMonth");
+        }
+    
+        public virtual ObjectResult<sp_GetTasksListComplete_Result> sp_GetTasksListComplete(Nullable<int> taskid, Nullable<int> companyid, Nullable<int> programid, Nullable<int> staffid, Nullable<int> tasktype, Nullable<int> taskstatus)
+        {
+            var taskidParameter = taskid.HasValue ?
+                new ObjectParameter("taskid", taskid) :
+                new ObjectParameter("taskid", typeof(int));
+    
+            var companyidParameter = companyid.HasValue ?
+                new ObjectParameter("companyid", companyid) :
+                new ObjectParameter("companyid", typeof(int));
+    
+            var programidParameter = programid.HasValue ?
+                new ObjectParameter("programid", programid) :
+                new ObjectParameter("programid", typeof(int));
+    
+            var staffidParameter = staffid.HasValue ?
+                new ObjectParameter("staffid", staffid) :
+                new ObjectParameter("staffid", typeof(int));
+    
+            var tasktypeParameter = tasktype.HasValue ?
+                new ObjectParameter("tasktype", tasktype) :
+                new ObjectParameter("tasktype", typeof(int));
+    
+            var taskstatusParameter = taskstatus.HasValue ?
+                new ObjectParameter("taskstatus", taskstatus) :
+                new ObjectParameter("taskstatus", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<sp_GetTasksListComplete_Result>("sp_GetTasksListComplete", taskidParameter, companyidParameter, programidParameter, staffidParameter, tasktypeParameter, taskstatusParameter);
+        }
     }
 }

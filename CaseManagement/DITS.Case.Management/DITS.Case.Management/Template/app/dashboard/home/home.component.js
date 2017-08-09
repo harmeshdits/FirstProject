@@ -28,8 +28,10 @@ var HomeComponent = (function () {
         initDemo();
         debugger;
         this._homeService.getDashboardData()
-            .subscribe(function (responseData) { return _this.data = responseData; });
-        console.log(this.data);
+            .subscribe(function (responseData) {
+            _this.data = responseData;
+            console.log(_this.data);
+        });
     };
     HomeComponent = __decorate([
         core_1.Component({

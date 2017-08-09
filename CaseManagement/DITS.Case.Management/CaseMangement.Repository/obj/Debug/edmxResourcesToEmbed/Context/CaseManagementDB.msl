@@ -1,29 +1,64 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
   <EntityContainerMapping StorageEntityContainer="CaseManagementModelStoreContainer" CdmEntityContainer="CaseManagementEntities">
-    <EntitySetMapping Name="Tasks">
-      <EntityTypeMapping TypeName="CaseManagementModel.Task">
-        <MappingFragment StoreEntitySet="Tasks">
+    <FunctionImportMapping FunctionImportName="sp_GetTaskCompletedByMonth" FunctionName="CaseManagementModel.Store.sp_GetTaskCompletedByMonth">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CaseManagementModel.sp_GetTaskCompletedByMonth_Result">
+          <ScalarProperty Name="month" ColumnName="month" />
+          <ScalarProperty Name="Column1" ColumnName="Column1" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_GetTasksListComplete" FunctionName="CaseManagementModel.Store.sp_GetTasksListComplete">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CaseManagementModel.sp_GetTasksListComplete_Result">
           <ScalarProperty Name="TaskId" ColumnName="TaskId" />
           <ScalarProperty Name="QueueStepActionId" ColumnName="QueueStepActionId" />
+          <ScalarProperty Name="TaskTypeId" ColumnName="TaskTypeId" />
           <ScalarProperty Name="TaskType" ColumnName="TaskType" />
-          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
           <ScalarProperty Name="ClientId" ColumnName="ClientId" />
           <ScalarProperty Name="ClientProgramEnrollmentId" ColumnName="ClientProgramEnrollmentId" />
           <ScalarProperty Name="StaffId" ColumnName="StaffId" />
+          <ScalarProperty Name="Staff" ColumnName="Staff" />
           <ScalarProperty Name="GroupId" ColumnName="GroupId" />
-          <ScalarProperty Name="TaskStatus" ColumnName="TaskStatus" />
           <ScalarProperty Name="DueDate" ColumnName="DueDate" />
           <ScalarProperty Name="CompletionDate" ColumnName="CompletionDate" />
           <ScalarProperty Name="Comments" ColumnName="Comments" />
           <ScalarProperty Name="Active" ColumnName="Active" />
-          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
-          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
-          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
-          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
-          <ScalarProperty Name="RecordDeleted" ColumnName="RecordDeleted" />
-          <ScalarProperty Name="DeletedBy" ColumnName="DeletedBy" />
+          <ScalarProperty Name="GroupName" ColumnName="GroupName" />
+          <ScalarProperty Name="TaskStatusId" ColumnName="TaskStatusId" />
+          <ScalarProperty Name="TaskStatus" ColumnName="TaskStatus" />
+          <ScalarProperty Name="EnrolledProgram" ColumnName="EnrolledProgram" />
+          <ScalarProperty Name="DueDateFull" ColumnName="DueDateFull" />
+          <ScalarProperty Name="ClientName" ColumnName="ClientName" />
+          <ScalarProperty Name="DeleteImage" ColumnName="DeleteImage" />
+          <ScalarProperty Name="DeleteImageTitle" ColumnName="DeleteImageTitle" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="Tasks">
+      <EntityTypeMapping TypeName="CaseManagementModel.Task">
+        <MappingFragment StoreEntitySet="Tasks">
           <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
+          <ScalarProperty Name="DeletedBy" ColumnName="DeletedBy" />
+          <ScalarProperty Name="RecordDeleted" ColumnName="RecordDeleted" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="CompletionDate" ColumnName="CompletionDate" />
+          <ScalarProperty Name="DueDate" ColumnName="DueDate" />
+          <ScalarProperty Name="TaskStatus" ColumnName="TaskStatus" />
+          <ScalarProperty Name="GroupId" ColumnName="GroupId" />
+          <ScalarProperty Name="StaffId" ColumnName="StaffId" />
+          <ScalarProperty Name="ClientProgramEnrollmentId" ColumnName="ClientProgramEnrollmentId" />
+          <ScalarProperty Name="ClientId" ColumnName="ClientId" />
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="TaskType" ColumnName="TaskType" />
+          <ScalarProperty Name="QueueStepActionId" ColumnName="QueueStepActionId" />
+          <ScalarProperty Name="TaskId" ColumnName="TaskId" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

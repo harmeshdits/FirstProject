@@ -6,10 +6,15 @@ using System.Threading.Tasks;
 
 namespace CaseManagement.Entities.Response
 {
-    public class TaskCompletedResponse : BaseResponse
+    public class TaskCompleted
     {
         public string Month { get; set; }
 
-        public int TaskCompletedCount { get; set; }
+        public int? TaskCompletedCount { get; set; }
+    }
+
+    public class TaskCompletedListResponse : BaseResponse
+    {
+        public List<TaskCompleted> TaskCompletedList { get; set; }
     }
 }

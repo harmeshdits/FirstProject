@@ -18,7 +18,7 @@ var HomeService = (function () {
         console.log('HomeService is initialized....');
     }
     HomeService.prototype.getDashboardData = function () {
-        var url = 'https://jsonplaceholder.typicode.com/posts';
+        var url = 'http://localhost:7544/api/DashBoardAPI/GetTaskCompletedListInMonthsOneYear';
         return this._http.get(url)
             .map(function (response) { return response.json(); });
     };

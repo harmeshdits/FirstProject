@@ -4,8 +4,8 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="4e7093eabd2c4ae39c80c29c058e9cdc" Name="Diagram1">
-        <EntityTypeShape EntityType="CaseManagementModel.Task" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+      <Diagram DiagramId="516e2cf8468f4821a35360e54ed80d31" Name="Diagram1">
+        <EntityTypeShape EntityType="CaseManagementModel.Task" Width="1.5" PointX="0.75" PointY="0.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

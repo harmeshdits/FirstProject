@@ -11,7 +11,7 @@ export class HomeService {
     }
 
     getDashboardData() {
-        const url = 'https://jsonplaceholder.typicode.com/posts';
+        const url = 'http://localhost:7544/api/DashBoardAPI/GetTaskCompletedListInMonthsOneYear';
         return this._http.get(url)
             .map((response:Response)=> response.json());
     }

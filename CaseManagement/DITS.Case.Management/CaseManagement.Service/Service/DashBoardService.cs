@@ -27,7 +27,7 @@ namespace CaseManagement.Service.Service
         #endregion
 
         #region public
-        public async Task<TaskCompletedResponse> GetTaskCompletedListInMonthsOneYear()
+        public async Task<TaskCompletedListResponse> GetTaskCompletedListInMonthsOneYear()
         {   
             return await _IDashBoardRepository.GetTaskCompletedListInMonthsOneYear();
         }

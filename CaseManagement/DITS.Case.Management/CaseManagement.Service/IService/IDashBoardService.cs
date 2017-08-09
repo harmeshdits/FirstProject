@@ -9,6 +9,6 @@ namespace CaseManagement.Service.IService
 {
     public interface IDashBoardService
     {
-        Task<TaskCompletedResponse> GetTaskCompletedListInMonthsOneYear();
+        Task<TaskCompletedListResponse> GetTaskCompletedListInMonthsOneYear();
     }
 }

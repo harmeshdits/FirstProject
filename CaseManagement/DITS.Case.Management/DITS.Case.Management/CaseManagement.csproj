@@ -107,6 +107,7 @@
     <Content Include="Template\app\dashboard\dashboard.module.js.map" />
     <Content Include="Template\app\dashboard\dashboard.routes.js.map" />
     <Content Include="Template\app\dashboard\home\home.component.js.map" />
+    <Content Include="Template\app\dashboard\home\home.service.js" />
     <Content Include="Template\app\dashboard\icons\icons.component.js.map" />
     <Content Include="Template\app\dashboard\maps\maps.component.js.map" />
     <Content Include="Template\app\dashboard\notifications\notifications.component.js.map" />
@@ -161,6 +162,7 @@
     <Content Include="Template\package.json" />
     <Content Include="Template\README.md" />
     <Content Include="Template\tsconfig.json" />
+    <Content Include="Template\app\dashboard\home\home.service.js.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -249,6 +251,7 @@
     <TypeScriptCompile Include="Template\app\dashboard\dashboard.module.ts" />
     <TypeScriptCompile Include="Template\app\dashboard\dashboard.routes.ts" />
     <TypeScriptCompile Include="Template\app\dashboard\home\home.component.ts" />
+    <TypeScriptCompile Include="Template\app\dashboard\home\home.service.ts" />
     <TypeScriptCompile Include="Template\app\dashboard\icons\icons.component.ts" />
     <TypeScriptCompile Include="Template\app\dashboard\maps\maps.component.ts" />
     <TypeScriptCompile Include="Template\app\dashboard\notifications\notifications.component.ts" />

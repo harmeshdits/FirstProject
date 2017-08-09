@@ -25,8 +25,10 @@ export class HomeComponent implements OnInit{
         initDemo();
         debugger;
         this._homeService.getDashboardData()
-            .subscribe(responseData => this.data = responseData);
+            .subscribe(responseData => {
+                this.data = responseData;
+                console.log(this.data);
+            });
 
-        console.log(this.data);
     }
 }

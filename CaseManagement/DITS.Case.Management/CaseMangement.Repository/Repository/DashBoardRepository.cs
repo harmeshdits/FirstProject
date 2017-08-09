@@ -17,22 +17,24 @@ namespace CaseMangement.Repository.Repository
         private CaseManagementEntities db;
 
         // Response class object
-        TaskCompletedResponse taskCompletedResponse;
+        TaskCompletedListResponse taskCompletedResponse;
 
         #endregion
 
         #region public
 
-        public async Task<TaskCompletedResponse> GetTaskCompletedListInMonthsOneYear()
+        public async Task<TaskCompletedListResponse> GetTaskCompletedListInMonthsOneYear()
         {
             try
             {
-                taskCompletedResponse = new  TaskCompletedResponse();
+                taskCompletedResponse = new  TaskCompletedListResponse();
                 using (db = new CaseManagementEntities())
                 {
-                    taskCompletedResponse.Month = "month";
-                    taskCompletedResponse.TaskCompletedCount = 1;
-                   await db.Tasks.FirstOrDefaultAsync();
+                    //SqlParameter PatientType = new SqlParameter("@PatientType", SqlDbType.Int);
+                    //PatientType.Direction = ParameterDirection.Input;
+                    //PatientType.Value = patientType;
+                    //response.PatientDashBoard = dbo.Database.SqlQuery<PatientDashBoardGridViewList>("dbo.GetPatientListing @PatientType", PatientType).ToList();
+                    taskCompletedResponse.TaskCompletedList = await db.Database.SqlQuery<TaskCompleted>("dbo.sp_GetTaskCompletedByMonth").ToListAsync();
                 }
             }
             catch (Exception ex)

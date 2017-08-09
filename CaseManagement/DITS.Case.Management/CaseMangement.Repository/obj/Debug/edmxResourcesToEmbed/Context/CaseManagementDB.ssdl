@@ -25,6 +25,15 @@
     <Property Name="DeletedBy" Type="varchar" MaxLength="50" />
     <Property Name="DeletedDate" Type="datetime" />
   </EntityType>
+  <Function Name="sp_GetTaskCompletedByMonth" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="sp_GetTasksListComplete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="taskid" Type="int" Mode="In" />
+    <Parameter Name="companyid" Type="int" Mode="In" />
+    <Parameter Name="programid" Type="int" Mode="In" />
+    <Parameter Name="staffid" Type="int" Mode="In" />
+    <Parameter Name="tasktype" Type="int" Mode="In" />
+    <Parameter Name="taskstatus" Type="int" Mode="In" />
+  </Function>
   <EntityContainer Name="CaseManagementModelStoreContainer">
     <EntitySet Name="Tasks" EntityType="Self.Tasks" Schema="dbo" store:Type="Tables" />
   </EntityContainer>
